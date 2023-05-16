@@ -1,0 +1,28 @@
+.ArtForest {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ArtForest__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ArtForest__title {
+    position: relative;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    color: rgb(0, 14, 77);
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}

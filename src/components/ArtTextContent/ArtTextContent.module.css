@@ -1,0 +1,28 @@
+.ArtTextContent {
+    background-color: #000;
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: Yanone Kaffeesatz, Arial, serif;
+    padding: 50px 5%;
+    gap: 5%;
+    font-size: calc(1vw + 1vh);
+    line-height: 1.15;
+}
+
+.ArtTextContent__title {
+    display: block;
+    font-family: PosteRetro, Arial, serif;
+    color: rgb(203, 157, 17);
+}
+
+.ArtTextContent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgb(6, 2, 1), transparent);
+    z-index: 1000;
+}

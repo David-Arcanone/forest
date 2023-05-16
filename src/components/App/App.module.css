@@ -1,0 +1,33 @@
+.App {
+     font-family: PosteRetro, Arial, serif;
+     font-size: 1dvw;
+     min-width: 320px;
+
+}
+
+.App__ArtHouseContainer {
+     height: 100vh;
+     width: 100%;
+}
+
+@font-face {
+     font-family: "PosteRetro";
+     src: url("../../fonts/posteretro/posteretro.woff") format("woff"),
+          url("../../fonts/posteretro/posteretro.woff2") format("woff2");
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: "Yanone Kaffeesatz";
+     src: url("../../fonts/yanone-kaffeesatz/yanone-kaffeesatz.woff") format("woff"),
+          url("../../fonts/yanone-kaffeesatz/yanone-kaffeesatz.woff2") format("woff2");
+     font-weight: normal;
+     font-style: normal;
+}
+
+/*
+.page {
+     background-color: #131316;
+     min-width: 320px;
+}*/

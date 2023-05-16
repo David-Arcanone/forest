@@ -2,7 +2,6 @@
      font-family: PosteRetro, Arial, serif;
      font-size: 1dvw;
      min-width: 320px;
-
 }
 
 .App__ArtHouseContainer {
@@ -25,9 +24,3 @@
      font-weight: normal;
      font-style: normal;
 }
-
-/*
-.page {
-     background-color: #131316;
-     min-width: 320px;
-}*/

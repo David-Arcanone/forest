@@ -6,7 +6,6 @@ import imageMid from '../../img/ArtForest/mid_forest.png';
 import imageFront from '../../img/ArtForest/front_forest.png';
 
 const ForestMovingBlock: React.FC = () => {
-
   const targetFront = React.useRef<HTMLImageElement>(null);
   const targetMid = React.useRef<HTMLImageElement>(null);
   const targetBackground = React.useRef<HTMLImageElement>(null);
@@ -48,22 +47,17 @@ const ForestMovingBlock: React.FC = () => {
       },
       scaleX: 1.2,
       scaleY: 1.2,
-      opacity: 0,   
+      opacity: 0,
     });
   },)
 
   return (
-    <>
-    {//<div className={styles.test} id="qwert"></div>
-    }
-      <div className={styles.ArtForest}>
-        <img src={imageBg} alt="небо" className={styles.ArtForest__img} ref={targetBackground} />
-        <img src={imageMid} alt="облака" className={styles.ArtForest__img} ref={targetMid} />
-        <h2 className={styles.ArtForest__title} ref={targetTitle}>Deep forest</h2>
-        <img src={imageFront} alt="дом" className={styles.ArtForest__img} ref={targetFront} />
-        { /*<img src={imageFrame} alt="рамка" className={`${styles.ArtHouse__img} ${styles.ArtHouse__img_frame}`}/> */}
-      </div>
-    </>
+    <div className={styles.ArtForest}>
+      <img src={imageBg} alt="небо" className={styles.ArtForest__img} ref={targetBackground} />
+      <img src={imageMid} alt="облака" className={styles.ArtForest__img} ref={targetMid} />
+      <h2 className={styles.ArtForest__title} ref={targetTitle}>Explore</h2>
+      <img src={imageFront} alt="дом" className={styles.ArtForest__img} ref={targetFront} />
+    </div>
   );
 }
 

@@ -16,12 +16,10 @@ const AppHeader: React.FC = () => {
   },)
 
   return (
-    <>
-      <div className={styles.ArtForest} ref={targetDiv}>
-        <h1 className={styles.ArtForest__title}>Scroll</h1>
-        <h2 className={styles.ArtForest__title} ref={targetTitle1}>Down</h2>
-      </div>
-    </>
+    <div className={styles.ArtForest} ref={targetDiv}>
+      <h1 className={styles.ArtForest__title}>Scroll</h1>
+      <h2 className={styles.ArtForest__title} ref={targetTitle1}>Down</h2>
+    </div>
   );
 }
 

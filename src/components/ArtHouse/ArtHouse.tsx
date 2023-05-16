@@ -6,7 +6,6 @@ import imageHills from '../../img/ArtHouse/hills01.png';
 import imageHouse from '../../img/ArtHouse/house02.png';
 import { gsap } from "gsap";
 
-
 const ArtHouse: React.FC = () => {
   const targetCloud = React.useRef<HTMLImageElement>(null);
   const targetSky = React.useRef<HTMLImageElement>(null);
@@ -35,7 +34,6 @@ const ArtHouse: React.FC = () => {
         scrub: 1,
         trigger: targetCloud.current,
       },
-      //yPercent: -1,
       scaleX: 1.05,
     });
     gsap.to(targetHouse.current, {
@@ -59,18 +57,14 @@ const ArtHouse: React.FC = () => {
       opacity: 0.05,
     });
   },)
-
-
   return (
-    <>
-      <div className={styles.ArtHouse}>
-        <img src={imageSky} alt="небо" className={styles.ArtHouse__img} ref={targetCloud} />
-        <img src={imageClouds} alt="облака" className={styles.ArtHouse__img} ref={targetSky} />
-        <h2 className={styles.ArtHouse__title} ref={targetTitle}>forest of Art</h2>
-        <img src={imageHills} alt="холмы" className={styles.ArtHouse__img} ref={targetHills} />
-        <img src={imageHouse} alt="дом" className={styles.ArtHouse__img} ref={targetHouse} />
-      </div>
-    </>
+    <div className={styles.ArtHouse}>
+      <img src={imageSky} alt="небо" className={styles.ArtHouse__img} ref={targetCloud} />
+      <img src={imageClouds} alt="облака" className={styles.ArtHouse__img} ref={targetSky} />
+      <h2 className={styles.ArtHouse__title} ref={targetTitle}>forest of Art</h2>
+      <img src={imageHills} alt="холмы" className={styles.ArtHouse__img} ref={targetHills} />
+      <img src={imageHouse} alt="дом" className={styles.ArtHouse__img} ref={targetHouse} />
+    </div>
   );
 }
 

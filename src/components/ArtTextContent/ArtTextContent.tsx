@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './ArtTextContent.module.css';
 import { gsap } from "gsap";
 
-
-const ArtTextContent: React.FC<{textArt: string; headerArt: string; trueColor: string}> = ({textArt, headerArt, trueColor}) => {
+const ArtTextContent: React.FC<{ textArt: string; headerArt: string; trueColor: string }> = ({ textArt, headerArt, trueColor }) => {
   const targetBox = React.useRef<HTMLDivElement>(null);
   const targetTitle = React.useRef<HTMLHeadingElement>(null);
   React.useEffect(() => {
@@ -16,21 +15,13 @@ const ArtTextContent: React.FC<{textArt: string; headerArt: string; trueColor: s
       backgroundColor: trueColor,
     });
   },)
-
-
   return (
-    <>
-      <div className={styles.ArtTextContent} ref={targetBox}>
-        <h2 className={styles.ArtTextContent__title} ref={targetTitle}>{headerArt}</h2> 
-        <div>
-            
-<p>{textArt}</p>
-        </div>
-        </div>
-        
-
-
-    </>
+    <div className={styles.ArtTextContent} ref={targetBox}>
+      <h2 className={styles.ArtTextContent__title} ref={targetTitle}>{headerArt}</h2>
+      <div>
+        <p>{textArt}</p>
+      </div>
+    </div>
   );
 }
 

@@ -42,7 +42,7 @@ const Ilon: React.FC = () => {
     gsap.to(targetBackgroundAlt.current, {
       scrollTrigger: {
         scrub: 1,
-        trigger: targetBackground.current,
+        trigger: targetFront.current,
         end: "+=50%"
       },
       yPercent: -100
